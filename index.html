@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <title>CSS Code Tricks</title>
   </head>
   <body>
     <header class="header">
-      <h1 >CSS Code Snippet</h1>
+      <h1>CSS Code Snippet</h1>
       <p class="headerP">
         Do you ever have trouble with CSS? Me too! Here are a few helpful tips
         that could help!
@@ -17,66 +17,94 @@
     </header>
     <main>
       <section>
-        <h2>Flexbox Row</h2><br>
-        <p class="sectionP">These are helpful properties to make a flexbox row</p>
+        <h2>Flexbox Column</h2>
+        <br />
+        <p class="sectionP">
+          These are helpful properties to make a flexbox column
+        </p>
         <pre>
-.row {
+.column {
   display: flex;  
-  flex-direction: row;  
-  flex-wrap: wrap;  
-}</pre>
+  flex-direction: column;  
+}</pre
+        >
       </section>
-      
-      <section><h2>Flexbox Row</h2><br>
-        <p class="sectionP">These are helpful properties to make a flexbox row</p>
-        <pre>
-.row {
-  display: flex;  
-  flex-direction: row;  
-  flex-wrap: wrap;  
-}</pre></section>
+
       <section>
-        <h2>Flexbox Row</h2><br>
-        <p class="sectionP">These are helpful properties to make a flexbox row</p>
+        <h2>CSS Grid Layout</h2>
+        <br />
+        <p class="sectionP">
+          These are helpful properties to make a CSS Grid Layout
+        </p>
         <pre>
-.row {
-  display: flex;  
-  flex-direction: row;  
-  flex-wrap: wrap;  
-}</pre>
-      </section>
-      <section>
-        <h2>Flexbox Row</h2><br>
-        <p class="sectionP">These are helpful properties to make a flexbox row</p>
-        <pre>
-.row {
-  display: flex;  
-  flex-direction: row;  
-  flex-wrap: wrap;  
-}</pre>
+.grid {
+  display: grid;  
+  width: 100%;  
+  grid-template-columns: repeat(12, 1fr);  
+}</pre
+        >
       </section>
       <section>
-        <h2>Flexbox Row</h2><br>
-        <p class="sectionP">These are helpful properties to make a flexbox row</p>
+        <h2>Box Border</h2>
+        <br />
+        <p class="sectionP">
+          These are helpful properties to make a simple border
+        </p>
         <pre>
-.row {
-  display: flex;  
-  flex-direction: row;  
-  flex-wrap: wrap;  
-}</pre>
+.border {
+  border: 5px dotted goldenrod;
+}</pre
+        >
       </section>
       <section>
-        <h2>Flexbox Row</h2><br>
-        <p class="sectionP">These are helpful properties to make a flexbox row</p>
+        <h2>Center content in a box</h2>
+        <br />
+        <p class="sectionP">These are helpful properties to center content</p>
         <pre>
-.row {
-  display: flex;  
-  flex-direction: row;  
-  flex-wrap: wrap;  
-}</pre>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}</pre
+        >
       </section>
-     
+      <section>
+        <h2>Overlay Card with Title</h2>
+        <br />
+        <p class="sectionP">
+          These are helpful properties to make elements overlap
+        </p>
+        <pre>
+.header {
+  positon: relative;  
+  margin-top: -20px 
+}</pre
+        >
+      </section>
+      <section>
+        <h2>Change the element theme</h2>
+        <br />
+        <p class="sectionP">
+          These are helpful properties to change element themes
+        </p>
+        <pre>
+.theme {
+  font-family:  font-family: Impact,
+    'Arial Narrow Bold', sans-serif;  
+  color: red;  
+  background-color: black;
+  transform: rotateX(35deg) 
+}</pre
+        >
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      Made by Greg Marzec with Brandon Espinosa
+      <p>
+        <a href="https://github.com/espinbrandon49/my-special-project"
+          >Project Repository</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
