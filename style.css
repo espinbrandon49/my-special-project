@@ -1,6 +1,6 @@
 :root {
-  --dark: #43457F;
-  --orange: #FF9B83;
+  --dark: #43457f;
+  --orange: #ff9b83;
 }
 
 * {
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-header{
+header {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -22,7 +22,8 @@ header{
   color: white;
 }
 
-header h1,p {
+header h1,
+p {
   background-color: var(--dark);
   background-color: var(--dark);
 }
@@ -55,7 +56,7 @@ h2 {
   transform: translateY(-12.5px);
   height: 25px;
   z-index: 2;
-  background-color: #FF9B83;
+  background-color: #ff9b83;
   border: solid 1px black;
 }
 
@@ -64,7 +65,7 @@ h2 {
 }
 
 pre {
-  background: linear-gradient(#87ceeb , #0BA8E6);
+  background: linear-gradient(#87ceeb, #0ba8e6);
   border-radius: 5px;
   border: 1px solid black;
   margin-top: 5px;
@@ -73,6 +74,13 @@ pre {
   width: 300px;
   padding: 3px;
   font-size: 11px;
+  opacity: 0.1;
+  user-select: all;
+}
+pre:hover {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  cursor: pointer;
 }
 
 footer {
@@ -84,11 +92,19 @@ footer {
   background-color: var(--dark);
   color: white;
 }
-footer p , a{
+footer p,
+a {
   background-color: var(--dark);
   color: white;
 }
 
 footer a:hover {
   color: aqua;
-} 
+}
+
+@media screen and (max-width: 992px) {
+    body, main {
+      background-color: yellow;
+    }
+  }
+  __
