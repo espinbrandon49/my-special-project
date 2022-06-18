@@ -22,9 +22,7 @@ header {
   color: white;
 }
 
-header h1,
-p {
-  background-color: var(--dark);
+header, h1, p, footer, a {
   background-color: var(--dark);
 }
 
@@ -89,12 +87,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dark);
-  color: white;
-}
-footer p,
-a {
-  background-color: var(--dark);
   color: white;
 }
 
