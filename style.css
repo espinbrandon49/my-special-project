@@ -10,6 +10,9 @@
   box-sizing: border-box;
 }
 
+body {
+  max-height: 100vh;
+}
 header {
   display: flex;
   position: relative;
@@ -20,9 +23,14 @@ header {
   justify-content: center;
   background-color: var(--dark);
   color: white;
+  line-height: 1.5;
 }
 
-header, h1, p, footer, a {
+header,
+h1,
+p,
+footer,
+a {
   background-color: var(--dark);
 }
 
@@ -30,6 +38,7 @@ main {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1300px;
 }
 
 section {
@@ -70,11 +79,14 @@ pre {
   margin-bottom: 5px;
   color: white;
   width: 300px;
+  height: 100%;
   padding: 3px;
   font-size: 11px;
   opacity: 0.1;
   user-select: all;
+  
 }
+
 pre:hover {
   opacity: 1;
   transition: opacity 1s ease-out;
@@ -82,21 +94,21 @@ pre:hover {
 }
 
 footer {
-  margin-top: 20px;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+footer,
+a {
   color: white;
 }
 
 footer a:hover {
   color: aqua;
 }
-
-@media screen and (max-width: 768px) {
-    body, main {
-      background-color: yellow;
-    }
-  }
-  __
