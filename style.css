@@ -11,7 +11,7 @@
 }
 
 body {
-  max-height: 100vh;
+height: 100vh;
 }
 header {
   display: flex;
@@ -57,7 +57,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6px;
+  padding: 10px;
   border-radius: 5px;
   position: absolute;
   transform: translateY(-12.5px);
@@ -80,11 +80,9 @@ pre {
   color: white;
   width: 300px;
   height: 100%;
-  padding: 3px;
   font-size: 11px;
   opacity: 0.1;
   user-select: all;
-  
 }
 
 pre:hover {
@@ -94,12 +92,12 @@ pre:hover {
 }
 
 footer {
+    position: absolute;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   line-height: 1.5;
-  position: absolute;
   bottom: 0;
   width: 100vw;
 }
@@ -112,3 +110,11 @@ a {
 footer a:hover {
   color: aqua;
 }
+@media screen and (max-width: 768px) {
+    header, h1, h1 +p, footer, a, footer > p {
+      background: #772014;
+    }
+    footer {
+        position: relative;
+    }
+  }
