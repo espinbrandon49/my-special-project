@@ -11,7 +11,7 @@
 }
 
 body {
-height: 100vh;
+  height: 100vh;
 }
 header {
   display: flex;
@@ -83,6 +83,7 @@ pre {
   font-size: 11px;
   opacity: 0.1;
   user-select: all;
+  padding: 10px;
 }
 
 pre:hover {
@@ -92,7 +93,7 @@ pre:hover {
 }
 
 footer {
-    position: absolute;
+  position: absolute;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -111,10 +112,15 @@ footer a:hover {
   color: aqua;
 }
 @media screen and (max-width: 768px) {
-    header, h1, h1 +p, footer, a, footer > p {
-      background: #772014;
-    }
-    footer {
-        position: relative;
-    }
+  header,
+  h1,
+  h1 + p,
+  footer,
+  a,
+  footer > p {
+    background: #772014;
   }
+  footer {
+    position: relative;
+  }
+}
